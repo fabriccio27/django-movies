@@ -1,1 +1,5 @@
 moviereview/local_settings.py
+moviereview/__pycache__/
+
+movies/__pycache__
+movies/migrations/__pycache__

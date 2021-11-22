@@ -10,7 +10,7 @@ class Movie(models.Model):
     release = models.DateField(auto_now_add=False, null=True, blank=True)
     genre = models.CharField(max_length=120)
     plot = models.CharField(max_length=300)
-    created_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True) #esto hace que en tabla de movies aparezca columna created_by_id
+    created_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True) #esto hace que en tabla de movies aparezca columna created_by_id
 
     def __str__(self):
         return self.title
